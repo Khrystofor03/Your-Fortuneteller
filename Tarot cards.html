@@ -55,13 +55,26 @@
         random1=-1;
         random2=-1;
         random3=-1;
+        aidi1=-1;
+        aidi2=-1;
+        aidi3=-1;
         function klikaj(i)
         {    
-             let menu = document.getElementById(i);
              //var random = Math.floor(Math.random() * 22);
              //menu.style.backgroundImage = "url('Card_images/"+random+".jpg')";
              //menu.style.backgroundSize = "center center";
-             if(random3==-1){
+             let menu = document.getElementById(i);
+             if(i!=aidi1 && i!=aidi2 && i!=aidi3){
+                if(aidi2!=-1){
+                    aidi3=i;
+                }
+                if(aidi1!=-1){
+                    aidi2=i;
+                }
+                if(aidi1==-1){
+                    aidi1=i;
+                }
+                if(random3==-1){
                  if(random2!=-1){
                 random3 = Math.floor(Math.random() * 22);
                 if(random3==random2){
@@ -197,36 +210,37 @@
                 text1.innerHTML="Передбачення на теперішнє";
                 text2.innerHTML="Папесса"
                 text3.innerHTML="Kapта дає оптимістичні прогнози на майбутнє. Цей період стане особливо сприятливим для";
-                text4.innerHTML=" зміцнення відносин з коханими, стабілізації фінансових справ і виявлення зрадників";
-                text5.innerHTML=" серед друзів. Тяжкі часи в особистому житті зникнуть без сліду, поступившись місцем ";
-                text6.innerHTML="розумінню і взаємній підтримці. Пошук компромісів повинен стати вашою пріоритетною задачею,";
-                text7.innerHTML=" тоді вам вдасться не тільки зберегти, але і значно зміцнити своє в становище в любовному гніздечку. У вашому найближчому оточенні є зрадник. Якщо раніше ви навіть не підозрювали про це, то тепер можете розраховувати на підтримку Всесвіту, який допоможе викрити прихованого ворога. У сфері кар'єри вам можуть надійти дуже привабливі пропозиції, які на перший погляд пообіцяють незліченні багатства в найближчому часі. Але це лише на перший погляд. Підводні камені тут настільки завуаловані, що ви не відразу розбереться, що до чого. Не варто погоджуватися на пропозиції, що поступили від людей, в репутації яких ви не впевнені. Це вбереже вас від втрат, як фіналів, так і корисних ділових зв'язків. Що стосується здоров'я, проблеми можуть виникнути тільки в періоди сезонних захворювань. При дотриманні традиційних заходів обережності, погіршення самопочуття вам не загрожує.";
-                text8.innerHTML="";
-                text9.innerHTML="";
-                text10.innerHTML="";
-                text11.innerHTML="";
-                text12.innerHTML="";
-                text13.innerHTML="";
-                text14.innerHTML="";
-                text15.innerHTML="";
-                text16.innerHTML="";
+                text4.innerHTML=" зміцнення відносин з коханими, стабілізації фінансових справ і виявлення зрадників серед";
+                text5.innerHTML=" друзів. Тяжкі часи в особистому житті зникнуть без сліду, поступившись місцем розумінню";
+                text6.innerHTML=" і взаємній підтримці. Пошук компромісів повинен стати вашою пріоритетною задачею,";
+                text7.innerHTML=" тоді вам вдасться не тільки зберегти, але і значно зміцнити своє в становище в любовному ";
+                text8.innerHTML="гніздечку. У вашому найближчому оточенні є зрадник. Якщо раніше ви навіть не підозрювали про ";
+                text9.innerHTML="це, то тепер можете розраховувати на підтримку Всесвіту, який допоможе викрити прихованого ";
+                text10.innerHTML="ворога. У сфері кар'єри вам можуть надійти дуже привабливі пропозиції, які на перший погляд ";
+                text11.innerHTML="пообіцяють незліченні багатства в найближчому часі. Але це лише на перший погляд. Підводні ";
+                text12.innerHTML="камені тут настільки завуаловані, що ви не відразу розбереться, що до чого. Не варто ";
+                text13.innerHTML="погоджуватися на пропозиції, що поступили від людей, в репутації яких ви не впевнені. Це ";
+                text14.innerHTML="вбереже вас від втрат, як фінансів, так і корисних ділових зв'язків. Що стосується здоров'я, ";
+                text15.innerHTML="проблеми можуть виникнути тільки в періоди сезонних захворювань. При дотриманні ";
+                text16.innerHTML="традиційних заходів обережності, погіршення самопочуття вам не загрожує.";
                  }
                  if (random1 == 3){
                 text1.innerHTML="Передбачення на теперішнє";
-                text2.innerHTML="Дурень"
-                text3.innerHTML="";
-                text4.innerHTML="";
-                text5.innerHTML="";
-                text6.innerHTML="";
-                text7.innerHTML="";
-                text8.innerHTML="";
-                text9.innerHTML="";
-                text10.innerHTML="";
-                text11.innerHTML="";
-                text12.innerHTML="";
-                text13.innerHTML="";
-                text14.innerHTML="";
-                text16.innerHTML="";
+                text2.innerHTML="Імператриця"
+                text3.innerHTML="Любовна дилема, яку поставить перед вами доля, здасться нерозв'язною. Насправді ж вона ";
+                text4.innerHTML="є простою. Однак є всього два шляхи - кардинально змінити свою поведінку, змиритися ";
+                text5.innerHTML="з деякими речами, які дратують і пригнічують, або ж взагалі припинити стосунки з теперішнім ";
+                text6.innerHTML="коханим/коханою. Третього, на жаль, немає. Гроші ще й не почнуть подати з неба поливним ";
+                text7.innerHTML="дощем, проте їхнє надходження стане постійним. Привести фінансові справи в порядок ";
+                text8.innerHTML="допоможуть вірні друзі або родичі. Вони підкажуть, як правильно діяти і при необхідності";
+                text9.innerHTML=" підтримають, як порадою, так і грошима. Ваше воістину богатирське здоров'я може похитнутися ";
+                text10.innerHTML="через незліченні стреси, які доведеться відчути через роботу. Не варто так переживати,";
+                text11.innerHTML=" адже ситуація почне поступово змінюватися на краще. Виходить, що нервуєте ви абсолютно ";
+                text12.innerHTML="дарма. А ось повернути втрачене здоров'я вкрай складно. На роботі чекають приємні зміни, ";
+                text13.innerHTML="керівництво та колеги почнуть цінувати вас ще більше. Цілком імовірно, що вашу кандидатуру, ";
+                text14.innerHTML="як найбільш підходящу, розглянуть як керіника структурного підрозділу. У будь-якому ";
+                text15.innerHTML="випадку, вас чекає підвищення. А наскільки воно буде кардинальним, залежить від вашої ";
+                text16.innerHTML="підприємливості.";
                  }
                  if (random1 == 4){
                 text1.innerHTML="Передбачення на теперішнє";
@@ -243,6 +257,7 @@
                 text12.innerHTML="";
                 text13.innerHTML="";
                 text14.innerHTML="";
+                text15.innerHTML="";
                 text16.innerHTML="";
                  }
                  if (random1 == 5){
@@ -260,6 +275,7 @@
                 text12.innerHTML="";
                 text13.innerHTML="";
                 text14.innerHTML="";
+                text15.innerHTML="";
                 text16.innerHTML="";
                  }
                  if (random1 == 6){
@@ -277,6 +293,7 @@
                 text12.innerHTML="";
                 text13.innerHTML="";
                 text14.innerHTML="";
+                text15.innerHTML="";
                 text16.innerHTML="";
                  }
                  if (random1 == 7){
@@ -294,6 +311,7 @@
                 text12.innerHTML="";
                 text13.innerHTML="";
                 text14.innerHTML="";
+                text15.innerHTML="";
                 text16.innerHTML="";
                  }
                  if (random1 == 8){
@@ -311,6 +329,7 @@
                 text12.innerHTML="";
                 text13.innerHTML="";
                 text14.innerHTML="";
+                text15.innerHTML="";
                 text16.innerHTML="";
                  }
                  if (random1 == 9){
@@ -328,6 +347,7 @@
                 text12.innerHTML="";
                 text13.innerHTML="";
                 text14.innerHTML="";
+                text15.innerHTML="";
                 text16.innerHTML="";
                  }
                  if (random1 == 10){
@@ -345,6 +365,7 @@
                 text12.innerHTML="";
                 text13.innerHTML="";
                 text14.innerHTML="";
+                text15.innerHTML="";
                 text16.innerHTML="";
                  }
                  if (random1 == 11){
@@ -362,6 +383,7 @@
                 text12.innerHTML="";
                 text13.innerHTML="";
                 text14.innerHTML="";
+                text15.innerHTML="";
                 text16.innerHTML="";
                  }
                  if (random1 == 12){
@@ -379,6 +401,7 @@
                 text12.innerHTML="";
                 text13.innerHTML="";
                 text14.innerHTML="";
+                text15.innerHTML="";
                 text16.innerHTML="";
                  }
                  if (random1 == 13){
@@ -396,6 +419,7 @@
                 text12.innerHTML="";
                 text13.innerHTML="";
                 text14.innerHTML="";
+                text15.innerHTML="";
                 text16.innerHTML="";
                  }
                  if (random1 == 14){
@@ -413,6 +437,7 @@
                 text12.innerHTML="";
                 text13.innerHTML="";
                 text14.innerHTML="";
+                text15.innerHTML="";
                 text16.innerHTML="";
                  }
                  if (random1 == 15){
@@ -430,6 +455,7 @@
                 text12.innerHTML="";
                 text13.innerHTML="";
                 text14.innerHTML="";
+                text15.innerHTML="";
                 text16.innerHTML="";
                  }
                  if (random1 == 16){
@@ -447,6 +473,7 @@
                 text12.innerHTML="";
                 text13.innerHTML="";
                 text14.innerHTML="";
+                text15.innerHTML="";
                 text16.innerHTML="";
                  }
                  if (random1 == 17){
@@ -464,6 +491,7 @@
                 text12.innerHTML="";
                 text13.innerHTML="";
                 text14.innerHTML="";
+                text15.innerHTML="";
                 text16.innerHTML="";
                  }
                  if (random1 == 18){
@@ -481,6 +509,7 @@
                 text12.innerHTML="";
                 text13.innerHTML="";
                 text14.innerHTML="";
+                text15.innerHTML="";
                 text16.innerHTML="";
                  }
                  if (random1 == 19){
@@ -498,6 +527,7 @@
                 text12.innerHTML="";
                 text13.innerHTML="";
                 text14.innerHTML="";
+                text15.innerHTML="";
                 text16.innerHTML="";
                  }
                  if (random1 == 19){
@@ -515,6 +545,7 @@
                 text12.innerHTML="";
                 text13.innerHTML="";
                 text14.innerHTML="";
+                text15.innerHTML="";
                 text16.innerHTML="";
                  }
                  if (random1 == 20){
@@ -532,6 +563,7 @@
                 text12.innerHTML="";
                 text13.innerHTML="";
                 text14.innerHTML="";
+                text15.innerHTML="";
                 text16.innerHTML="";
                  }
                  if (random1 == 21){
@@ -549,6 +581,7 @@
                 text12.innerHTML="";
                 text13.innerHTML="";
                 text14.innerHTML="";
+                text15.innerHTML="";
                 text16.innerHTML="";
                  }
 
@@ -579,11 +612,13 @@
              }
              if(random1==-1){
                 //random1 = Math.floor(Math.random() * 2);
-                random1=2;
+                random1=3;
                 menu.style.backgroundImage = "url('Card_images/"+random1+".jpg')";
                 menu.style.backgroundSize = "center center";
                 text.innerHTML="Залишилося вибрати 2 карти"
-             }     
+             }
+             }
+                  
        }
        function Globalni(s){
           
@@ -714,7 +749,7 @@
             color: blue;
             white-space: nowrap;
             font-size: 4.5vw;
-            right: 1000px;
+            left: 100px;
             z-index: 9;
             transform: translateY(750px);
         }
