@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>YourFortuneTeller</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">ITeam</a>
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">more</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <h2 id="text">Text</h2>
+    </header>
+    <div class="grid-container">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            min-height: 100vh;
+            overflow-x: hidden;
+            background: linear-gradient(#2b1055, #7597de);
+        }
+        
+        .grid-container {
+            transform: translateY(150px);
+            display: grid;
+            justify-content: space-around;
+            grid-template-columns: 150px 150px 150px 150px 150px 150px;
+            grid-template-rows: 150px 150px 150px 150px 150px 150px;
+            gap: 10px;
+            padding: 10px;
+        }
+        
+        .grid-container>div {
+            background-image: url("https://as1.ftcdn.net/v2/jpg/03/74/33/00/1000_F_374330075_Yk9UD8dLzwkSocOreDhyERqMlhYcQSPp.jpg");
+            height: 120px;
+            width: 120px;
+            border-radius: 50%;
+            background-size: 120px;
+            border: 2px solid white;
+            padding: 40px 0;
+            font-size: 30px;
+        }
+        
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 30px 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+        
+        header .logo {
+            color: #fff;
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 2em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        header ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        header ul li {
+            list-style: none;
+            margin-left: 20px;
+        }
+        
+        header ul li a {
+            text-decoration: none;
+            padding: 6px 15px;
+            color: #fff;
+            border-radius: 20px;
+        }
+        
+        header ul li a:hover,
+        header ul li a.active {
+            background: #fff;
+            color: #2b1055;
+        }
+        
+        #text {
+            position: absolute;
+            color: #fff;
+            white-space: nowrap;
+            font-size: 3.5vw;
+            right: 700px;
+            z-index: 9;
+            transform: translateY(600px);
+        }

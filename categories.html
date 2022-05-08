@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Category Card</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="icon">
+                <img src="images/png.1.png">
+            </div>
+            <div class="content">
+                <h3>Tarot Cards</h3>
+                <p>The Tarot is a deck of 78 cards, each with its own imagery, symbolism and story. The 22 Major Arcana cards represent life's karmic and spiritual lessons. They represent a path to spiritual self-awareness and depict the various stages we
+                    encounter as we search for greater meaning and understanding.</p>
+            </div>
+            <div class="more">
+            </div>
+            <div class="m">
+                <a href="Tarot cards.html" id="sel">Try it</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="icon">
+                <img src="images/png.2.png">
+            </div>
+            <div class="content">
+                <h3>Crystal Ball</h3>
+                <p>If you say that someone, especially an expert, looks into a crystal ball, you mean that they are trying to predict the future. Crystal balls are traditionally used by fortune-tellers. Local economists have looked into their crystal balls
+                    and seen something rather nasty.</p>
+            </div>
+            <div class="more">
+            </div>
+            <div class="m">
+                <a href="Tarot cards.html" id="sel">Try it</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="icon">
+                <img src="images/png.3.png">
+            </div>
+            <div class="content">
+                <h3>Magic Runes</h3>
+                <p>According to the sagas, runic inscriptions held magical powers. With the aid of inscriptions, you could predict the future, protect a person against misfortune, imbue objects with different qualities, or you could write down conjurations,
+                    curses, and spells.</p>
+            </div>
+            <div class="more">
+            </div>
+            <div class="m">
+                <a href="Runes.html" id="sel">Try it</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        let more = document.querySelectorAll('.more');
+        for (let i = 0; i < more.length; i++) {
+            more[i].addEventListener('click', function() {
+                more[i].parentNode.classList.toggle('active')
+            })
+        }
+    </script>
+</body>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: #313131;
+    }
+    
+    .container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 1200px;
+        flex-wrap: nowrap;
+    }
+    
+    .container .card {
+        position: relative;
+        width: 300px;
+        padding: 20px;
+        margin: 20px;
+        background: #3f3f3f;
+    }
+    
+    .container .card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        border: 20px solid transparent;
+        border-top: 20px solid #17e78c;
+        border-right: 20px solid #17e78c;
+    }
+    
+    .container .card.active::before {
+        border-top: 20px solid #ff3b7e;
+        border-right: 20px solid #ff3b7e;
+    }
+    
+    .container .card .icon {
+        margin-bottom: 10px;
+    }
+    
+    .container .card .icon img {
+        max-width: 90px;
+    }
+    
+    .container .card .content {
+        position: relative;
+        height: 215px;
+        overflow: hidden;
+    }
+    
+    .container .card.active .content {
+        height: auto;
+    }
+    
+    .container .card .content::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        background: linear-gradient(transparent, #3f3f3f);
+    }
+    
+    .container .card.active .content::before {
+        display: none;
+    }
+    
+    .container .card .content h3 {
+        color: #fff;
+        font-size: 1.4em;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    
+    .container .card .content p {
+        font-weight: 300;
+        color: #ccc;
+    }
+    
+    .container .card .more {
+        position: relative;
+        padding: 10px 15px;
+        background: #17e78c;
+        margin-top: 15px;
+        display: inline-block;
+        cursor: pointer;
+        text-transform: uppercase;
+        color: #383838;
+        font-weight: 500;
+        letter-spacing: 2px;
+        font-size: 14px;
+    }
+    
+    div.m {
+        font-size: 14px;
+        position: relative;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #383838;
+        padding: 10px 10px;
+        background: #17e78c;
+        font-weight: 500;
+        display: inline-block;
+        left: 55px;
+        cursor: pointer;
+    }
+    
+    .container .card.active .more {
+        background: #ff3b7e;
+        color: #fff;
+    }
+    
+    .container .card .more::before {
+        content: 'Read more';
+    }
+    
+    .container .card.active .more::before {
+        content: 'Read less';
+    }
+    #sel{
+        text-decoration: none;
+        color: #383838;
+    }
+</style>
+
+</html>
