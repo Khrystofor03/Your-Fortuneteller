@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>YourFortuneTeller</title>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">ITeam</a>
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">More</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <div class="picture">
+        <image src="images/ball.png" width="350" height="350">
+
+    </div>
+
+    <div class="category">
+        <h2>Яка сфера життя тебе цікавить?</h2>
+        <button class="button button1">Любов та стосунки</button>
+        <button class="button button2">Майбутнє</button>
+        <button class="button button3">Так або Ні</button>
+    </div>
+
+    <div class="categ">
+        <form>
+            <label for="fname">Дайте запитання</label>
+            <input type="text" id="fname" name="fname">
+            <a class="button button1">Дізнатися</a>
+        </form>
+    </div>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            min-height: 100vh;
+            overflow-x: hidden;
+            background: linear-gradient(#2b1055, #7597de);
+        }
+        
+        .button {
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            border: 2px solid white;
+            border-radius: 20px;
+        }
+        
+        .button1 {
+            background-color: #4b38b8;
+            color: white;
+            border: 2px solid white;
+        }
+        
+        .button1:hover {
+            background-color: white;
+            color: #2b1055;
+        }
+        
+        .button2 {
+            background-color: #4b38b8;
+            color: white;
+            border: 2px solid white;
+        }
+        
+        .button2:hover {
+            background-color: white;
+            color: #2b1055;
+        }
+        
+        .button3 {
+            background-color: #4b38b8;
+            color: white;
+            border: 2px solid white;
+        }
+        
+        .button3:hover {
+            background-color: white;
+            color: #2b1055;
+        }
+        
+        input[type=text] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            background: linear-gradient(#2b1055, #7597de);
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        
+        .picture {
+            position: absolute;
+            padding: 10px;
+            display: block;
+            margin-left: 30px;
+            width: 90%;
+            align-items: center;
+            transform: translateY(200px);
+        }
+        
+        .category {
+            color: #fff;
+            position: absolute;
+            font-size: 1em;
+            text-align: center;
+            width: 90%;
+            top: 200px;
+        }
+        
+        .categ {
+            color: white;
+            text-align: left;
+            width: 20%;
+            transform: translateY(250px);
+            position: absolute;
+            top: 200px;
+            left: 550px;
+        }
+        
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 30px 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+        
+        header .logo {
+            color: #fff;
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 2em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        header ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        header ul li {
+            list-style: none;
+            margin-left: 20px;
+        }
+        
+        header ul li a {
+            text-decoration: none;
+            padding: 6px 15px;
+            color: #fff;
+            border-radius: 20px;
+        }
+        
+        header ul li a:hover,
+        header ul li a.active {
+            background: #fff;
+            color: #2b1055;
+        }
+    </style>
+
+</html>
