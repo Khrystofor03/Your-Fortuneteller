@@ -10,9 +10,9 @@
     <header>
         <a href="#" class="logo">ITeam</a>
         <ul>
-            <li><a href="#">Домашня</a></li>
+            <li><a href="homepage.html">Домашня</a></li>
             <li><a href="#">Інфо</a></li>
-            <li><a href="Home page.html">Більше</a></li>
+            <li><a href="#">Більше</a></li>
             <li><a href="#">Контакти</a></li>
         </ul>
         
@@ -480,7 +480,7 @@
                 text.innerHTML="Прочитайте ваші передбачення";
                 scroll(0,600);
                 
-                
+                /*
                 perevirka_na_ssylku1=Math.floor(Math.random() * 3);
                 if(perevirka_na_ssylku1==2){
                     document.getElementById('restart').style.color= "royalblue";
@@ -507,6 +507,16 @@
                     div.appendChild(e);
                 }
 
+                */
+
+                    restart.innerHTML="";
+                    document.getElementById('restart').style.color= "royalblue";
+                    var div = document.getElementById('restart');
+                    var e = document.createElement('a');
+                    e.href='http://google.com';
+                    document.getElementById('restart').style.color= "royalblue";
+                    e.appendChild(document.createTextNode('Натисніть, щоб отримати детальніше трактування'));
+                    div.appendChild(e);
                 
 
                 //pershe peredbachennia
