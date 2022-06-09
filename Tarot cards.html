@@ -8,11 +8,11 @@
 
 <body>
     <header>
-        <a href="#" class="logo">ITeam</a>
+        <a href="#" class="logo" href="homepage.html">ITeam</a>
         <ul>
             <li><a href="homepage.html">Домашня</a></li>
-            <li><a href="#">Інфо</a></li>
-            <li><a href="#">Більше</a></li>
+            <li><a href="categories.html">Гадання</a></li>
+            <li><a href="Fortune_tellers.html">Послуги</a></li>
             <li><a href="#">Контакти</a></li>
         </ul>
         
@@ -71,7 +71,8 @@
             </div>
         </div>
     </div>
-        <a href="#" onclick="Globalni(id)"  id="restart" ></a>
+        <!--  <a href="#" onclick="Globalni(id)"  id="restart" ></a>  -->
+        <a href="Fortune_tellers.html" id="restart" ></a>
     
     
     <style>
@@ -130,13 +131,26 @@
         
         header .logo {
             color: #fff;
-            font-weight: 700;
+            border-radius: 20px;
+            display: inline-block;
+            padding: 15px, 30px;
+            position: relative;
             text-decoration: none;
             font-size: 2em;
             text-transform: uppercase;
             letter-spacing: 2px;
+            transition: 0.2s;
+            justify-content: center;
+            font-weight: 700;
         }
-        
+
+        header .logo:hover {
+            color: #255784;
+            background: #cae4f9;
+            box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+            transition-delay: 0.1s;
+        }
+
         header ul {
             display: flex;
             justify-content: center;
@@ -206,10 +220,10 @@
         #restart {
             position: absolute;
             /*color: royalblue;*/
-            color: 541a8b;
+            color: #542eff;
             white-space: nowrap;
             font-size: 3.0vw;
-            left: 350px;
+            left: 150px;
             z-index: 9;
             /*padding-top: 10px;*/
             text-decoration: underline;
@@ -499,13 +513,18 @@
                     div.appendChild(e);
                 }
                 */
-                    document.getElementById('restart').style.color= "royalblue";
+                
+                /*
+                    restart.innerHTML="";
+                    document.getElementById('restart').style.color= "#dba51a";
                     var div = document.getElementById('restart');
                     var e = document.createElement('a');
-                    e.href='http://google.com';
-                    document.getElementById('restart').style.color= "royalblue";
+                    e.href='Fortune_tellers.html';
+                    document.getElementById('restart').style.color= "#dba51a";
                     e.appendChild(document.createTextNode('Натисніть, щоб отримати детальніше трактування'));
                     div.appendChild(e);
+                */
+                restart.innerHTML="Натисніть, щоб отримати детальніше трактування";
 
                 
 

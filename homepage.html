@@ -6,11 +6,11 @@
 </head>
 <body>
   <header>
-    <a href="homepage.html" class="logo">ITeam</a>
+    <a href="homepage.html" class="logo" href="homepage.html">ITeam</a>
     <ul>
       <li><a href="homepage.html"class="active">Домашня</a></li>
-      <li><a href="#">Інфо</a></li>
-      <li><a href="#">Більше</a></li>
+      <li><a href="categories.html">Гадання</a></li>
+      <li><a href="Fortune_tellers.html">Послуги</a></li>
       <li><a href="#">Контакти</a></li>
     </ul>
   </header>
@@ -80,11 +80,24 @@ header
 header .logo
 {
     color: #fff;
-    font-weight: 700;
+    border-radius: 20px;
+    display: inline-block;
+    padding: 15px, 30px;
+    position: relative;
     text-decoration: none;
     font-size: 2em;
     text-transform: uppercase;
     letter-spacing: 2px;
+    transition: 0.2s;
+    justify-content: center;
+    font-weight: 700;
+}
+
+header .logo:hover {
+    color: #255784;
+    background: #cae4f9;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    transition-delay: 0.1s;
 }
 header ul
 {
